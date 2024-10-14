@@ -1,0 +1,24 @@
+# .gitpod.yml
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+    - name: Backend 
+      init: |
+        cd backend
+        echo "APP_SECRET=$(openssl rand -hex 16)" >> .env
+        echo "APP_ENV=dev" >> .env
+        composer install
+      command: symfony server:start
+    - name: Frontend 
+      init: |
+        cd frontend
+        npm install
+      command: npm run dev
+
+ports:
+  - port: 5173  # React.js frontend
+    onOpen: open-browser
+  - port: 8000  # Symfony backend
+    onOpen: ignore
