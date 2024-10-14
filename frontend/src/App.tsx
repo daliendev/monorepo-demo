@@ -6,7 +6,7 @@ function App() {
 
   const fetchMessage = () => {
     setMessage('Loading...')
-    fetch(`http://localhost:8000/hello/world`)
+    fetch(`/api/hello/world`)
       .then((response) => response.json())
       .then((data) => setMessage(data.message))
       .catch((error) => {
