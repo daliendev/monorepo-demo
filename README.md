@@ -1,6 +1,7 @@
 # Monorepo with React Frontend and Symfony Backend
 
-This project demonstrates a monorepo setup with a React frontend and a Symfony backend, designed to work seamlessly in a Gitpod cloud development environment.
+This repository serves as a practical demonstration of the concepts outlined in the article about "How to Eliminate CORS Friction in a Cloud-Based Development Environment workflow?"   
+https://blog.dcadeau.com/monorepo-in-gitpod    
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/daliendev/monorepo-demo)
 
